@@ -30,9 +30,9 @@ module axis_chirp_framer #
     input wire                          aclk,
     input wire                          aresetn,
     
-    // Configuration: Transform window size, Chirp beginning skip
-    //  size = 1 << cfg_data[4:0] 
-    input wire [4:0]                    cfg_nfft,
+    // Configuration: Transform window size
+    //  size = 1 << cfg_data[3:0] 
+    input wire [3:0]                    cfg_nfft,
 
     output wire                         err_nsmall,
 
